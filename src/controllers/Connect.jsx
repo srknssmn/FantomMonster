@@ -41,7 +41,7 @@ function Connect({sendProvider, sendWallet}) {
                 <header id="header" className="py-4 lg:py-6 text-lighty font-gabriela">
                     <div className="container flex justify-between space-x-4 lg:space-x-16 items-start">
                         <a href="/" className="flex flex-col items-center lg:ml-4">
-                            <p className="text-2xl lg:text-3xl font-bold tracking-widest text-transparent bg-gradient-to-r bg-clip-text from-blue-800 to-gray-200">MONSTER</p>
+                            <p className="text-2xl lg:text-3xl font-bold tracking-widest text-transparent bg-gradient-to-r bg-clip-text from-blue-800 to-gray-200">F*CK BEAR</p>
                         </a>
                         <div className="block md:hidden pr-4 text-white">
                             <div id="menubutton" className="containerSec" onClick={myFunction}>

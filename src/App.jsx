@@ -5,7 +5,7 @@ import Connect from './controllers/Connect';
 import Buyers from './components/Buyers';
 import {Contract} from './contracts/Contract';
 import { ethers } from "ethers";
-import MonsterPic from './images/Monster.jpg'
+import MonsterPic from './images/Monster.png'
 
 function App() {
 
@@ -95,7 +95,7 @@ function App() {
         <div>
           <div className='mx-4 lg:mx-32 mt-8 lg:mt-12 mb-2 lg:mb-8 items-center justify-center flex flex-col'>
             <h1 className="text-3xl lg:text-6xl font-bold tracking-wider text-center">
-              You Can Hit Monster!
+              Hit! & F*ck! Bear
             </h1>
             <img className='monsterPic rounded-lg drop-shadow-xl mt-8' src={MonsterPic} alt="" />
             
@@ -105,14 +105,14 @@ function App() {
                 <div>
                   {/* Hit Monster Section */}
                   <div className='flex items-center justify-center my-8'>
-                    <button className='hover:text-red-800 transition duration-500 tracking-widest rounded-lg border-2 border-red-800 px-10 py-2 text-2xl text-black font-bold' onClick={kickMonster}>KICK</button>
+                    <button className='hover:text-red-800 transition duration-500 tracking-widest rounded-lg border-2 border-red-800 px-10 py-2 text-2xl text-black font-bold' onClick={kickMonster}>HIT!</button>
                   </div>
 
                   {/* Monster Info Section */}
                   <div className='my-6 p-2 lg:p-4 border-2 border-gray-400 rounded-lg'>
-                    <h4 className="tracking-wider font-semibold text-xl underline">Monster Info:</h4>
+                    <h4 className="tracking-wider font-semibold text-xl underline">Bear Info:</h4>
                     <div className='flex flex-row space-x-2 my-3 items-center'>
-                      <p className='font-bold tracking-wider'>Monster Health:</p>
+                      <p className='font-bold tracking-wider'>Bear Health:</p>
                       <p className='text-sm lg:text-md'>{monsterHealth} / {monsterFirstHealth}</p>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ function App() {
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <div className="sm:flex sm:items-center sm:justify-between">
                 <a href="/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                  <p className="text-2xl lg:text-3xl font-bold tracking-widest text-transparent bg-gradient-to-r bg-clip-text from-blue-800 to-gray-200">MONSTER</p>
+                  <p className="text-2xl lg:text-3xl font-bold tracking-widest text-transparent bg-gradient-to-r bg-clip-text from-blue-800 to-gray-200">F*CK BEAR</p>
                 </a>
                 <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                     <li>
@@ -179,7 +179,7 @@ function App() {
                 </ul>
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://coinhunterstr.com/" target="_blank" className="hover:underline">CoinHunters™</a>. All Rights Reserved.</span>
+            <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://coinhunterstr.com/" target="_blank" className="hover:underline">CoinHunters™</a>. All Rights Reserved.</span>
         </div>
       </footer>
     </div>
