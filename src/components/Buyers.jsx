@@ -6,7 +6,7 @@ function Buyers({buyersArray}) {
         <div className="overflow-y-auto h-96 overscroll-contain">
             {buyersArray.map((item, index) => {
                 return (
-                    <ShowBuyers buyer={item} key={index}/>
+                    <ShowBuyers player={item} key={index} buyerC={index}/>
                 )
             })}
         </div>

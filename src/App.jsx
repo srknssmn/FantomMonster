@@ -118,29 +118,33 @@ function App() {
                   </div>
 
                   {/* User Info Section */}
-                  <div className='my-6 p-2 lg:p-4 border-2 border-gray-400 rounded-lg'>
+                  <div className='mt-6 mb-2 p-2 lg:p-4 border-2 border-gray-400 rounded-lg'>
                     <h4 className="tracking-wider font-semibold text-xl underline">User Info:</h4>
                     <div className='flex flex-row space-x-2 my-3 items-center'>
                       <p className='font-bold tracking-wider'>Wallet:</p>
                       <p className='text-sm lg:text-md'>{walletAddress}</p>
                     </div>
                     <div className='flex flex-row space-x-2 my-3 items-center'>
-                      <p className='font-bold tracking-wider'>User Power:</p>
-                      <p className='text-sm lg:text-md'>{userPower}</p>
-                    </div>
-                    <div className='flex flex-row space-x-2 my-3 items-center'>
                       <p className='font-bold tracking-wider'>User Hit Count:</p>
                       <p className='text-sm lg:text-md'>{userHit}</p>
                     </div>
+                    <div className='flex flex-row space-x-2 my-3 items-center'>
+                      <p className='font-bold tracking-wider'>User Power:</p>
+                      <p className='text-sm lg:text-md'>{userPower}</p>
+                    </div>
+                    <p>*Your power will increase with every Hit</p>
                   </div>
                 </div>
-                <h2 className='text-center tracking-wider text-3xl font-bold'>All Players Info</h2>
-                <div className='my-4 mx-4'>
-                  {buyers.length > 0 ? <p>Total Players: {buyers.length}</p> : ""}
-                </div>
-                <div className='my-4 mx-4'>
-                  <h4 className="tracking-wider font-semibold text-xl underline">Players List:</h4>
-                  <Buyers buyersArray={buyers}/>
+                
+                <div className='mt-6'>
+                  <h2 className='text-center tracking-wider text-3xl font-bold'>All Players Info</h2>
+                  <div className='my-4 mx-4'>
+                    {buyers.length > 0 ? <p>Total Players: {buyers.length}</p> : ""}
+                  </div>
+                  <div className='my-4 mx-4'>
+                    <h4 className="tracking-wider font-semibold text-xl underline">Players List:</h4>
+                    <Buyers buyersArray={buyers}/>
+                  </div>
                 </div>
               </div>
 
