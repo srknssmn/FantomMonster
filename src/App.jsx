@@ -6,6 +6,7 @@ import Buyers from './components/Buyers';
 import {Contract} from './contracts/Contract';
 import { ethers } from "ethers";
 import MonsterPic from './images/Monster.png'
+import { verifyNetwork } from './controllers/verifyNetwork';
 
 function App() {
 
@@ -68,6 +69,7 @@ function App() {
   const kickMonster = async () => {
 
     try {
+      await verifyNetwork();
       const txn = await monsterContract.kickMonster();
       await txn.wait();
       await console.log("success")
