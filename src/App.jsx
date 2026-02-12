@@ -170,22 +170,22 @@ function App() {
                     <li>
                         <a href="https://github.com/srknssmn" target="_blank" className="hover:underline me-4 md:me-6">Personal Github</a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="https://coinhunterstr.com/" target="_blank" className="hover:underline me-4 md:me-6">WEB</a>
-                    </li>
+                    </li> */}
                     <li>
-                        <a href="https://twitter.com/CoinHuntersTR" target="_blank" className="hover:underline me-4 md:me-6">X (Twitter)</a>
+                        <a href="https://twitter.com/slapseki" target="_blank" className="hover:underline me-4 md:me-6">X (Twitter)</a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="https://www.youtube.com/@CoinHuntersTR" target="_blank" className="hover:underline me-4 md:me-6">Youtube</a>
                     </li>
                     <li>
                         <a href="https://twitter.com/CoinHuntersTR" target="_blank" className="hover:underline">Telegram</a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://coinhunterstr.com/" target="_blank" className="hover:underline">CoinHunters™</a>. All Rights Reserved.</span>
+            <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2026 <a href="https://github.com/srknssmn" target="_blank" className="hover:underline">srkn™</a>. All Rights Reserved.</span>
         </div>
       </footer>
     </div>
