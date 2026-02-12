@@ -1,12 +1,12 @@
 export const verifyNetwork = async () => {
 
     // Sepolia Network Verifying
-    const fantomID = await '0xFAA5';
+    const baseID = await '0x2105';
     const chainId = await window.ethereum.request({
         method: 'eth_chainId',
       });
     
-    if (chainId === fantomID){
+    if (chainId === baseID){
         console.log("Bravo!, you are on the correct network")
         
     } else {
@@ -17,9 +17,9 @@ export const verifyNetwork = async () => {
         
             await window.ethereum.request({
                 method: 'wallet_switchEthereumChain',
-                params: [{ chainId: fantomID}],
+                params: [{ chainId: baseID}],
             });
-            console.log("You have succefully switched to Fantom Sonic Testnet")
+            console.log("You have succefully switched to Base Network")
         
         } catch (switchError) {
             
@@ -31,11 +31,11 @@ export const verifyNetwork = async () => {
                     await window.ethereum.request({
                         method: 'wallet_addEthereumChain',
                         params: [
-                        { chainId: '0xFAA5', 
-                        chainName:'Fantom Sonic Builders Testnet',
-                        rpcUrls:['https://rpc.sonic.fantom.network'],
+                        { chainId: '0x2105', 
+                        chainName:'Base',
+                        rpcUrls:['https://base.drpc.org'],
                         nativeCurrency: {
-                        symbol:'FTM', // 2-6 characters long
+                        symbol:'ETH', // 2-6 characters long
                     decimals: 18
                     }
                         
